@@ -10,7 +10,7 @@ const Navbar = ({setShowLogin}) => {
 
   return (
     <div
-      className={`flex items-center justify-between px-6 md:px-16 lg:px-24
+    className={`flex items-center justify-between px-6 md:px-16 lg:px-24
       xl:px-32 py-4 text-gray-600 border-b border-borderColor relative transition-all
       ${location.pathname === "/" && "bg-light"}`}
     >
@@ -20,7 +20,7 @@ const Navbar = ({setShowLogin}) => {
       </Link>
 
       <div
-        className={`max-sm:fixed max-sm:h-screen max-sm:w-full max-sm:top-16
+      className={`max-sm:fixed max-sm:h-screen max-sm:w-full max-sm:top-16
         max-sm:border-t border-borderColor right-0 flex flex-col sm:flex-row
         items-start sm:items-center gap-4 sm:gap-8 max-sm:p-4 transition-all duration-300 z-50
         ${location.pathname === "/" ? "bg-light" : "bg-white"}
@@ -37,16 +37,16 @@ const Navbar = ({setShowLogin}) => {
 
           <input
             type="text"
-            className="py-1.5 w-full bg-transparent outline-none placeholder-gray-500"
+          className="py-1.5 w-full bg-transparent outline-none placeholder-gray-500"
             placeholder="Search products"
           />
 
           <img src={assets.search_icon} alt="search" />
 
         </div>
-        <div classname='flex max-sm:flex-col items-start sm:items-center gap-6'>
+        <div className='flex max-sm:flex-col items-start sm:items-center gap-6'>
             <button onClick={()=> navigate('/owner')}
-            className="cursor-pointer px-3">Dashboard </button>
+          className="cursor-pointer px-3">Dashboard </button>
             <button onClick={()=> setShowLogin(true)}className="cursor-pointer px-7 py-2 bg-primary
             hover:bg-primary-dull transition-all text-white rounded-lg">Login</button>
         </div>

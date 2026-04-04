@@ -24,7 +24,7 @@ const Hero = () => {
               required
               value={pickupLocation}
               onChange={(e) => setPickupLocation(e.target.value)}
-              className='outline-none'
+            className='outline-none'
             >
               <option value="">Pickup Location</option>
 
@@ -47,7 +47,7 @@ const Hero = () => {
               type="date"
               id="pickup-date"
               min={new Date().toISOString().split('T')[0]}
-              className='text-sm text-gray-500'
+            className='text-sm text-gray-500'
               required
             />
           </div>
@@ -59,7 +59,7 @@ const Hero = () => {
             <input
               type="date"
               id="return-date"
-              className='text-sm text-gray-500'
+            className='text-sm text-gray-500'
               required
             />
           </div>
@@ -67,14 +67,14 @@ const Hero = () => {
           {/* Search Button */}
           <button
             type="submit"
-            className='flex items-center justify-center gap-2 px-9 py-3
+          className='flex items-center justify-center gap-2 px-9 py-3
             max-sm:mt-4 bg-primary hover:bg-primary-dull text-white rounded-full
             cursor-pointer'
           >
             <img
               src={assets.search_icon}
               alt="search"
-              className='brightness-300'
+            className='brightness-300'
             />
             Search
           </button>
